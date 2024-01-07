@@ -141,12 +141,12 @@ form{
 }
 
 div img{
-    margin:0 auto;
-    width:60px;
-    padding-left: 200px;
-    text-align: center;
+    width:80px;
+    padding:10px;
     background-repeat: no-repeat;
     background-position:center;
+    margin: 20px auto 20px auto;
+    
     
     
     
@@ -186,6 +186,115 @@ footer{
 }
 
 /*Footer End*/
+/*seat start*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    background: none;
+  }
+  
+  .plane {
+    margin: 10px auto ;
+    max-width: 400px;
+    background:white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-style:dashed;
+    
+    
+    
+  }
+  
+  .select {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .select h1 {
+    width: 60%;
+    margin: 200px auto 20px auto;
+    
+    
+  }
+  
+  .exit {
+    position: relative;
+    height: 50px;
+  }
+  .exit:before, .exit:after {
+    content: "EXIT";
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px 2px 2px 2px;
+    display: block;
+    position: absolute;
+    background: red;
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 5px;
+  }
+  .exit:before {
+    left: 10px;
+  }
+  .exit:after {
+    right: 10px;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .seats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  
+  .seat {
+    display: flex;
+    flex: 0 0 14.28%;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .seat label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #5bfc60;
+    border-radius: 5px; 
+    color: black; 
+  }
+  
+  .seat label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0px 2px green;
+  }
+  
+  .seat:nth-child(3) {
+    margin-right: 14%;
+  }
+  .seat input[type=checkbox] {
+    position: absolute;
+  }
+  .seat input[type=checkbox]:checked + label {
+    background: #656e65;
+  }
+/*Seat end*/
 
 /*Mobile view*/
 @media (max-width:1000px){
@@ -203,8 +312,25 @@ footer{
     width:100%;
 }
 .text p{
-    width:412px;
+    width:350px;
+}
+.select{
+    height:268x;
+}
+.plane{
+    max-width:340px;
 }
 
 
 }
+/*Dekstop view*/
+@media (min-width:1024px){
+
+}
+/*Tablet view*/
+@media (min-width:769px) and (max-width:1023px){
+
+}
+
+
+
