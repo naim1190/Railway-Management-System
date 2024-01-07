@@ -190,10 +190,10 @@ footer{
 /*Mobile view*/
 @media (max-width:1000px){
     .formD{
-        width:400px;
+        width:358px;
     }
     .search{
-        width:340px;
+        width:293px;
     }
     header{
         width:100%;
@@ -205,13 +205,5 @@ footer{
     width:412px;
 }
 
-
-}
-/*Dekstop view*/
-@media (min-width:1024px){
-
-}
-/*Tablet view*/
-@media (min-width:769px) and (max-width:1023px){
 
 }
